@@ -350,13 +350,13 @@ def nmap_script_scan(target, script, ports=""):
 
 
 @llm.hookimpl
-def register_tools(register):
+def register_tools(register_nmap):
     # Register each function as a separate tool
-    register(get_local_network_info)
-    register(nmap_scan)
-    register(nmap_quick_scan)
-    register(nmap_port_scan)
-    register(nmap_service_detection)
-    register(nmap_os_detection)
-    register(nmap_ping_scan)
-    register(nmap_script_scan)
+    register_nmap(get_local_network_info)
+    register_nmap(nmap_scan)
+    register_nmap(nmap_quick_scan)
+    register_nmap(nmap_port_scan)
+    register_nmap(nmap_service_detection)
+    register_nmap(nmap_os_detection)
+    register_nmap(nmap_ping_scan)
+    register_nmap(nmap_script_scan)
