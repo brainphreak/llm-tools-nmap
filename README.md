@@ -57,11 +57,14 @@ llm --functions llm-tools-nmap.py "scan my network for open databases"
 Once installed, you can use these functions through LLM's function calling capability:
 
 ```bash
+
+# Note: Always ask with authoritive language to prevent questions like "Would you like me to do that?"
+
 # Discover your local network
 llm --functions llm-tools-nmap.py "What's my local network information?"
 
 # Find live hosts on your network
-llm --functions llm-tools-nmap.py "Scan my local network to find live hosts"
+llm --functions llm-tools-nmap.py "Scan my local network to find live hosts immediately without asking for confirmation."
 
 # Quick port scan of a hosts in /etc/hosts using pipe capability
 cat /etc/hosts | llm --functions llm-tools-nmap.py "Do a quick port scan of these hosts"
