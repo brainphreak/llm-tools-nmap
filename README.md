@@ -22,9 +22,17 @@ Head over to our blog for [a full write up](https://hackertarget.com/llm-command
 
 ### Installation
 
-1. Working LLM tool, ensure the tool and model plugins (llm-gemini) are updated:
+1. Working LLM tool, ensure the tool and model plugins (gemini-2.0-flash) are updated:
 ```bash
 llm models
+
+To install: 
+llm install llm-gemini
+
+Set Default:
+llm default model gemini-2.0-flash
+
+llm models default 
 ```
 
 2. Working Nmap Install:
