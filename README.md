@@ -30,7 +30,7 @@ To install:
 llm install llm-gemini
 
 Set Default:
-llm default model gemini-2.0-flash
+llm models default gemini/gemini-2.0-flash
 ```
 
 2. Working Nmap Install:
